@@ -23,6 +23,19 @@ public class LogingActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(LogingActivity.this, MainPrincipal.class);
                 startActivity(intent);
+                /*Thread timerTread = new Thread() {
+                    public void run() {
+                        try {
+                            sleep(100);
+                        } catch (InterruptedException e) {
+                            e.printStackTrace();
+                        } finally {
+                            Intent intent = new Intent(LogingActivity.this, MainPrincipal.class);
+                            startActivity(intent);
+                        }
+                    }
+                };
+                timerTread.start();*/
             }
         });
     }
