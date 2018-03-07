@@ -7,16 +7,9 @@
     tools:context="com.example.usuariodam.jorgediazmaroto.MainPrincipal">
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:orientation="vertical"
-
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imageView"
@@ -37,9 +30,8 @@
 
             <ImageView
                 android:id="@+id/im_fox"
-                android:layout_width="137dp"
+                android:layout_width="75dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
                 app:srcCompat="@drawable/fox" />
 
             <TextView
@@ -47,52 +39,42 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_weight="1"
+                android:layout_marginLeft="1dp"
                 android:fontFamily="@font/amatic_sc"
                 android:text="MrFox"
-                android:textAlignment="viewStart"
                 android:textColor="@android:color/background_dark"
-                android:textSize="30sp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/logo"
-                app:layout_constraintVertical_bias="0.0" />
+                android:textSize="36sp"
+                app:layout_constraintTop_toBottomOf="@+id/logo" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:paddingEnd="8dp"
-            android:paddingStart="8dp">
+            android:layout_height="54dp"
+            android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button"
-                android:layout_width="match_parent"
+                android:id="@+id/btn_desinstal"
+                android:layout_width="188dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_marginRight="4dp"
                 android:background="@drawable/button_custom"
-                android:text="Button"
+                android:text="UNINSTALL"
                 android:textColor="@color/colorPrimary" />
 
             <Button
-                android:id="@+id/button2"
+                android:id="@+id/btn_update"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="8dp"
-                android:layout_weight="1"
+                android:layout_marginLeft="4dp"
                 android:background="#216FED"
-                android:text="UPdate"
+                android:text="UPDATE"
                 android:textColor="@android:color/background_light" />
         </LinearLayout>
 
         <android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:id="@+id/swipeAct"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:paddingEnd="8dp"
-            android:paddingStart="8dp">
+            android:layout_height="match_parent">
 
             <ScrollView
                 android:id="@+id/scrollView"
@@ -102,9 +84,12 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center"
-                    android:text="foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!"
+                    android:layout_marginTop="10dp"
+                    android:layout_margin="10dp"
+                    android:background="@android:color/holo_blue_light"
+                    android:text="foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!
+foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!\nfoxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy! foxy!"
+                    android:textAlignment="center"
                     android:textColor="@android:color/background_light" />
 
             </ScrollView>
@@ -112,4 +97,5 @@
         </android.support.v4.widget.SwipeRefreshLayout>
 
     </LinearLayout>
+
 </android.support.constraint.ConstraintLayout>
